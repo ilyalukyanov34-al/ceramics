@@ -19,10 +19,11 @@
 .header__nav-logo {
     font-family: var(--ff);
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1.063rem, 0.961rem + 0.51vw, 1.5rem);
     line-height: 100%;
     color: var(--bb);
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .header__nav-list {
@@ -35,11 +36,12 @@
 .header__nav-list_item-link {
     font-family: var(--ff);
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(0.938rem, 0.807rem + 0.65vw, 1.5rem);
     line-height: 100%;
     color: var(--bb);
     text-decoration: none;
     transition: 0.3s;
+
 }
 
 .header__nav-list_item-link:hover {
@@ -74,7 +76,7 @@
 .banner__title {
     font-family: var(--ff);
     font-weight: 400;
-    font-size: 74px;
+    font-size: clamp(2.5rem, 2.009rem + 2.46vw, 4.625rem);
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--white);
@@ -83,16 +85,17 @@
 .banner__desc {
     display: flex;
     flex-direction: column;
-    gap: 77px;
+    gap: 70px;
 }
 
 .banner__slogan {
     font-family: var(--ff);
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1.063rem, 0.961rem + 0.51vw, 1.5rem);
     line-height: 100%;
     letter-spacing: 0%;
     color: var(--ee);
+    word-break: break-all;
 }
 
 .Show {
@@ -102,7 +105,7 @@
     background: transparent;
     border: 1px solid var(--white);
     color: var(--white);
-    font-size: 24px;
+    font-size: clamp(1.25rem, 1.192rem + 0.29vw, 1.5rem);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -112,5 +115,283 @@
 }
 
 .Show:hover {
-    color: var(--gg);
+    color: var(--bb);
+}
+
+@media screen and (max-width: 1170px) {
+    .header__nav-list {
+        gap: 70px;
+    }
+
+    .header__nav-icons {
+        gap: 55px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .header__nav-list {
+        gap: 60px;
+    }
+
+    .header__nav-icons {
+        gap: 48px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+
+    .Show {
+        width: 250px;
+        height: 70px;
+        padding: 10px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 65px;
+    }
+
+}
+
+@media screen and (max-width: 940px) {
+    .header__nav-list {
+        gap: 45px;
+    }
+
+    .header__nav-icons {
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .header__nav-list {
+        gap: 35px;
+    }
+
+    .header__nav-icons {
+        gap: 38px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .header__nav-list {
+        gap: 20px;
+    }
+
+    .header__nav-icons {
+        gap: 30px;
+    }
+
+    .Show {
+        width: 240px;
+        height: 67px;
+        padding: 9px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 55px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .header__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .header__nav-icons {
+        display: flex;
+        gap: 62px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Show {
+        width: 230px;
+        height: 61px;
+        padding: 9px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 45px;
+    }
+
+    .banner__content {
+        gap: 35px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .Show {
+        width: 220px;
+        height: 58px;
+        padding: 9px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 40px;
+    }
+
+    .banner__content {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .header__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .header__nav-icons {
+        display: flex;
+        gap: 52px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Show {
+        width: 200px;
+        height: 55px;
+        padding: 9px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 36px;
+    }
+
+    .banner__content {
+        gap: 27px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 55px;
+    }
+
+    .header__nav-icons {
+        display: flex;
+        gap: 42px;
+    }
+
+    .Show {
+        width: 180px;
+        height: 50px;
+        padding: 9px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 32px;
+    }
+
+    .banner__content {
+        gap: 27px;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    .header__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .header__nav-icons {
+        display: flex;
+        gap: 32px;
+    }
+
+    .Show {
+        width: 140px;
+        height: 43px;
+        padding: 9px;
+        transition: 0.3s;
+    }
+
+    .banner__desc {
+        gap: 30px;
+    }
+
+    .banner__content {
+        gap: 27px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .header__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .header__nav-icons {
+        display: flex;
+        gap: 29px;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .header__wrap {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header__nav-list {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .header__nav-icons {
+        display: flex;
+        gap: 25px;
+    }
 }

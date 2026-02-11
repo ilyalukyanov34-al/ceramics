@@ -17,6 +17,9 @@
     --ee: #EEEEEE
 }
 
+body{
+    min-width: 320px;
+}
 .container{
     max-width: 1704px;
     width: 100%;
