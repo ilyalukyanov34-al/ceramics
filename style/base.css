@@ -5,8 +5,16 @@
     list-style: none;
     outline: none;
     border: none;
-    font-family: "share tech mono";
+    font-family: var(--ff);
     font-weight: 400;
+}
+
+:root{
+    --white: #F9F8F4;
+    --ff: "share tech mono";
+    --bb: #242424;
+    --gg:  grey;
+    --ee: #EEEEEE
 }
 
 .container{
