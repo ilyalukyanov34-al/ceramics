@@ -1,0 +1,59 @@
+.footer {
+    padding: 158px 0;
+    border: 2px solid var(--bb);
+}
+
+.footer__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__nav-list_lest {
+    display: flex;
+    flex-direction: row;
+    gap: 230px;
+}
+
+.footer__nav-list_item-link1 {
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--bb);
+}
+
+.footer__nav-list_item-link2 {
+    display: block;
+    /* важно, чтобы margin работал как нужно */
+    margin-bottom: 20px;
+    /* расстояние до иконок */
+    font-family: var(--ff);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 90%;
+    color: var(--bb);
+}
+.footer__nav-list_item-link1,
+.footer__nav-list_item-link2 {
+    text-decoration: none; /* убирает подчеркивание */
+}
+.footer__right {
+    display: flex;
+    flex-direction: column;
+    /* FOLLOW US сверху, иконки снизу */
+    align-items: center;
+    /* центрируем по горизонтали */
+    gap: 26px;
+    /* расстояние между FOLLOW US и иконками */
+}
+
+.footer__icons {
+    display: flex;
+    /* иконки в ряд */
+    gap: 42px;
+    /* расстояние между иконками */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

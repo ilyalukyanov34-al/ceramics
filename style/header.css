@@ -244,6 +244,11 @@
         gap: 70px;
     }
 
+    .header__nav-icons {
+        display: flex;
+        gap: 52px;
+    }
+
     .Show {
         display: block;
         margin: 0 auto;
@@ -260,10 +265,7 @@
         align-items: center;
     }
 
-    .header__nav-icons {
-        display: flex;
-        gap: 52px;
-    }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -380,13 +382,6 @@
         gap: 10px;
     }
 
-    .Show {
-        width: 110px;
-        height: 45px;
-        padding: 7px;
-        transition: 0.3s;
-    }
-
     .header__nav-list {
         display: flex;
         align-items: center;
@@ -397,6 +392,15 @@
         display: flex;
         gap: 29px;
     }
+
+    .Show {
+        width: 110px;
+        height: 45px;
+        padding: 7px;
+        transition: 0.3s;
+    }
+
+
 }
 
 @media screen and (max-width: 345px) {
