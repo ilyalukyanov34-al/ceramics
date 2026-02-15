@@ -56,7 +56,7 @@
 
 .banner {
     height: 100svh;
-    background: url(../img/banner.png);
+    background: url(../img/banner.png) no-repeat center/cover;
     flex: 2 0 auto;
 }
 
