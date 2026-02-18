@@ -76,44 +76,39 @@
             </div>
 
             <main class="product">
-                <div class="product1">
-                    <div class="product__card1">
-                        <button class="product-card__discount1">50%</button>
-                        <div class="product-card__content1">
-                            <p class="product-card__title1">Clay Pot "Sakura"</p>
-                            <p class="product-card__size1">Size: Medium</p>
-                            <p class="product-card__color1">Color: Light Gray</p>
-                            <p class="product-card__price1">Price: 60 USD</p>
-                        </div>
+
+                <div class="product__card">
+                    <button class="product-card__discount">50%</button>
+                    <div class="product-card__content">
+                        <p class="product-card__title">Clay Pot "Sakura"</p>
+                        <p class="product-card__size">Size: Medium</p>
+                        <p class="product-card__color">Color: Light Gray</p>
+                        <p class="product-card__price">Price: 60 USD</p>
                     </div>
                 </div>
 
-                <div class="product2">
-                    <div class="product__card2">
-                        <button class="product-card__discount2">20%</button>
-
-                        <div class="product-card__content2">
-                            <p class="product-card__title2">Clay Pot "Tokyo"</p>
-                            <p class="product-card__size2">Size: Large</p>
-                            <p class="product-card__color2">Color: Beige</p>
-                            <p class="product-card__price2">Price: 80 USD</p>
-                        </div>
+                <div class="product__card">
+                    <button class="product-card__discount">20%</button>
+                    <div class="product-card__content">
+                        <p class="product-card__title">Clay Pot "Tokyo"</p>
+                        <p class="product-card__size">Size: Large</p>
+                        <p class="product-card__color">Color: Beige</p>
+                        <p class="product-card__price">Price: 80 USD</p>
                     </div>
                 </div>
 
-                <div class="product3">
-                    <div class="product__card3">
-                        <button class="product-card__discount3">40%</button>
-
-                        <div class="product-card__content3">
-                            <p class="product-card__title3">Clay Pot "Fuji"</p>
-                            <p class="product-card__size3">Size: Large</p>
-                            <p class="product-card__color3">Color: Dark Gray</p>
-                            <p class="product-card__price3">Price: 120 USD</p>
-                        </div>
+                <div class="product__card product__card--big">
+                    <button class="product-card__discount">40%</button>
+                    <div class="product-card__content">
+                        <p class="product-card__title">Clay Pot "Fuji"</p>
+                        <p class="product-card__size">Size: Large</p>
+                        <p class="product-card__color">Color: Dark Gray</p>
+                        <p class="product-card__price">Price: 120 USD</p>
                     </div>
                 </div>
+
             </main>
+
 
 
         </nav>
@@ -123,7 +118,7 @@
         <div class="container gallery__nav">
             <div class="gallery__nav2">
                 <h2 class="gallery__wrap-title2">Bestsellers</h2>
-                <img src="./img/line.png" class="shop__wrap-title_line2">
+                <img src="./img/line.png" class="gallery__wrap-title_line2">
             </div>
             <div class="text2">
                 <h3 class="text__gallery2">Discover the most popular clay pots that attract the attention of our
@@ -133,10 +128,8 @@
                     style. </p>
             </div>
 
-            <!-- GRID КАРТОЧЕК -->
             <div class="gallery__cards">
-                <!-- Карточка 1 -->
-                <div class="gallery-card">
+                <div class="gallery-card1">
                     <div class="gallery-card__top">
                         <button class="gallery-card__discount">20%</button>
                         <div class="gallery-card__icons">
@@ -157,115 +150,110 @@
                     </div>
                 </div>
 
-                <!-- Карточка 2 -->
                 <div class="gallery-card2">
-                    <div class="gallery-card__top2">
-                        <button class="gallery-card__discount2">New</button>
-                        <div class="gallery-card__icons2">
-                            <div class="gallery-card__icon-wrapper2">
-                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop2">
+                    <div class="gallery-card__top">
+                        <button class="gallery-card__discount">New</button>
+                        <div class="gallery-card__icons">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop">
                             </div>
-                            <div class="gallery-card__icon-wrapper2">
-                                <img src="./img/like.svg" alt="like" class="gallery-card__like2">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/like.svg" alt="like" class="gallery-card__like">
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-card__content2">
-                        <p class="gallery-card__title2">Clay Pot "Kyoto"</p>
-                        <p class="gallery-card__size2">Size: Medium</p>
-                        <p class="gallery-card__color2">Color: Beige and Dark Gray</p>
-                        <p class="gallery-card__price2">Price: 40 USD</p>
-                        <button class="gallery-card__buy2">Buy</button>
+                    <div class="gallery-card__content">
+                        <p class="gallery-card__title">Clay Pot "Kyoto"</p>
+                        <p class="gallery-card__size">Size: Medium</p>
+                        <p class="gallery-card__color">Color: Beige and Dark Gray</p>
+                        <p class="gallery-card__price">Price: 40 USD</p>
+                        <button class="gallery-card__buy">Buy</button>
                     </div>
                 </div>
-                <!-- Карточка 3 -->
                 <div class="gallery-card3">
-                    <div class="gallery-card__top3">
-                        <button class="gallery-card__discount3">10%</button>
-                        <div class="gallery-card__icons3">
-                            <div class="gallery-card__icon-wrapper3">
-                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop3">
+                    <div class="gallery-card__top">
+                        <button class="gallery-card__discount">10%</button>
+                        <div class="gallery-card__icons">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop">
                             </div>
-                            <div class="gallery-card__icon-wrapper3">
-                                <img src="./img/like.svg" alt="like" class="gallery-card__like3">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/like.svg" alt="like" class="gallery-card__like">
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-card__content3">
-                        <p class="gallery-card__title3">Clay Pot "Haru"</p>
-                        <p class="gallery-card__size3">Size: Small</p>
-                        <p class="gallery-card__color3">Color: Beige</p>
-                        <p class="gallery-card__price3">Price: 10 USD</p>
-                        <button class="gallery-card__buy3">Buy</button>
+                    <div class="gallery-card__content">
+                        <p class="gallery-card__title">Clay Pot "Haru"</p>
+                        <p class="gallery-card__size">Size: Small</p>
+                        <p class="gallery-card__color">Color: Beige</p>
+                        <p class="gallery-card__price">Price: 10 USD</p>
+                        <button class="gallery-card__buy">Buy</button>
                     </div>
                 </div>
-                <!-- Карточка 4 -->
                 <div class="gallery-card4">
-                    <div class="gallery-card__top4">
-                        <button class="gallery-card__discount4">40%</button>
-                        <div class="gallery-card__icons4">
-                            <div class="gallery-card__icon-wrapper4">
-                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop4">
+                    <div class="gallery-card__top">
+                        <button class="gallery-card__discount">40%</button>
+                        <div class="gallery-card__icons">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop">
                             </div>
-                            <div class="gallery-card__icon-wrapper4">
-                                <img src="./img/like.svg" alt="like" class="gallery-card__like4">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/like.svg" alt="like" class="gallery-card__like">
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-card__content4">
-                        <p class="gallery-card__title4">Clay Pot "Rinko"</p>
-                        <p class="gallery-card__size4">Size: Large</p>
-                        <p class="gallery-card__color4">Color: Dark Gray</p>
-                        <p class="gallery-card__price4">Price: 200 USD</p>
-                        <button class="gallery-card__buy4">Buy</button>
+                    <div class="gallery-card__content">
+                        <p class="gallery-card__title">Clay Pot "Rinko"</p>
+                        <p class="gallery-card__size">Size: Large</p>
+                        <p class="gallery-card__color">Color: Dark Gray</p>
+                        <p class="gallery-card__price">Price: 200 USD</p>
+                        <button class="gallery-card__buy">Buy</button>
                     </div>
                 </div>
-                <!-- Карточка 5 -->
                 <div class="gallery-card5">
-                    <div class="gallery-card__top5">
-                        <button class="gallery-card__discount5">90%</button>
-                        <div class="gallery-card__icons5">
-                            <div class="gallery-card__icon-wrapper5">
-                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop5">
+                    <div class="gallery-card__top">
+                        <button class="gallery-card__discount">90%</button>
+                        <div class="gallery-card__icons">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop">
                             </div>
-                            <div class="gallery-card__icon-wrapper5">
-                                <img src="./img/like.svg" alt="like" class="gallery-card__like5">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/like.svg" alt="like" class="gallery-card__like">
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-card__content5">
-                        <p class="gallery-card__title5">Clay Pot "Shizuoka"</p>
-                        <p class="gallery-card__size5">Size: Large</p>
-                        <p class="gallery-card__color5">Color: Beige</p>
-                        <p class="gallery-card__price5">Price: 60 USD</p>
-                        <button class="gallery-card__buy5">Buy</button>
+                    <div class="gallery-card__content">
+                        <p class="gallery-card__title">Clay Pot "Shizuoka"</p>
+                        <p class="gallery-card__size">Size: Large</p>
+                        <p class="gallery-card__color">Color: Beige</p>
+                        <p class="gallery-card__price">Price: 60 USD</p>
+                        <button class="gallery-card__buy">Buy</button>
                     </div>
                 </div>
-                <!-- Карточка 6 -->
                 <div class="gallery-card6">
-                    <div class="gallery-card__top6">
-                        <button class="gallery-card__discount6">New</button>
-                        <div class="gallery-card__icons6">
-                            <div class="gallery-card__icon-wrapper6">
-                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop6">
+                    <div class="gallery-card__top">
+                        <button class="gallery-card__discount">New</button>
+                        <div class="gallery-card__icons">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/shop.svg" alt="shop" class="gallery-card__shop">
                             </div>
-                            <div class="gallery-card__icon-wrapper6">
-                                <img src="./img/like.svg" alt="like" class="gallery-card__like6">
+                            <div class="gallery-card__icon-wrapper">
+                                <img src="./img/like.svg" alt="like" class="gallery-card__like">
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-card__content6">
-                        <p class="gallery-card__title6">Clay Pot "Kawa"</p>
-                        <p class="gallery-card__size6">Size: Small</p>
-                        <p class="gallery-card__color6">Color: Beige</p>
-                        <p class="gallery-card__price6">Price: 30 USD</p>
-                        <button class="gallery-card__buy6">Buy</button>
+                    <div class="gallery-card__content">
+                        <p class="gallery-card__title">Clay Pot "Kawa"</p>
+                        <p class="gallery-card__size">Size: Small</p>
+                        <p class="gallery-card__color">Color: Beige</p>
+                        <p class="gallery-card__price">Price: 30 USD</p>
+                        <button class="gallery-card__buy">Buy</button>
                     </div>
                 </div>
             </div>
     </section>
 
-    <section class="about">
+     <section class="about">
         <div class="container about__nav">
             <div class="about__wrap">
                 <h2 class="about__wrap-title">About us</h2>
@@ -303,7 +291,7 @@
             </div>
             <div class="footer__right">
                 <ul class="footer__nav-list_right">
-                    <a href="#" class="footer__nav-list_item-link2">FOLLOW US</a>
+                    <a   href="#" class="footer__nav-list_item-link2">FOLLOW US</a>
 
                     <div class="footer__icons">
                         <li class="footer__nav-list_item">
@@ -326,7 +314,7 @@
 
             </div>
         </div>
-    </section>
+    </section>  
 
 </body>
 

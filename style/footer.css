@@ -34,10 +34,13 @@
     line-height: 90%;
     color: var(--bb);
 }
+
 .footer__nav-list_item-link1,
 .footer__nav-list_item-link2 {
-    text-decoration: none; /* убирает подчеркивание */
+    text-decoration: none;
+    /* убирает подчеркивание */
 }
+
 .footer__right {
     display: flex;
     flex-direction: column;
@@ -56,4 +59,79 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+.footer__nav-list_item-link2 {
+    transition: 0.3s; /* плавность */
+}
+
+.footer__nav-list_item-link2:hover {
+    color: var(--gg);      /* любой твой цвет */
+}
+
+@media screen and (max-width:1230px) {
+    .footer__nav-list_lest {
+        gap: 170px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .footer__nav-list_lest {
+        gap: 130px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .footer__nav-list_lest {
+        gap: 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .footer__nav-list_lest {
+        gap: 70px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .footer__nav-list_item-link2 {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-family: var(--ff);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 90%;
+        color: var(--bb);
+    }
+
+    .footer {
+        padding: 128px 0;
+        border: 2px solid var(--bb);
+    }
+
+    /* весь футер в колонку */
+    .footer__nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+    }
+
+    /* 4 ссылки вертикально */
+    .footer__nav-list_lest {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    /* правый блок по центру */
+    .footer__right {
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* иконки остаются в ряд */
+    .footer__icons {
+        flex-direction: row;
+        justify-content: center;
+    }
 }
