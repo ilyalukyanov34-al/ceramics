@@ -260,6 +260,53 @@
         margin-top: 80px;
         max-width: 1704px;
     }
+
+    .gallery-card__top {
+        padding: 18px;
+    }
+
+    .gallery-card__discount {
+        padding: 14px 38px;
+        max-width: 120px;
+    }
+    
+
+    .gallery-card__icons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .gallery-card__icon-wrapper {
+        padding: 12px;
+    }
+
+    .gallery-card__content {
+        margin-top: auto;
+        /* ключевой момент */
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .gallery-card__color {
+        margin-bottom: 25px
+    }
+
+    .gallery-card__buy {
+        max-width: 200px;
+        height: 65px;
+        margin-top: 15px;
+        margin-bottom: 24px;
+        padding: 20px 60px;
+        background: var(--white);
+        font-family: var(--ff);
+        font-weight: 400;
+        font-size: clamp(1.25rem, 1.192rem + 0.29vw, 1.5rem);
+        line-height: 100%;
+        color: var(--bb);
+    }
+
+
 }
 
 @media screen and (max-width:430px) {

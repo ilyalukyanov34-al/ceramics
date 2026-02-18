@@ -183,6 +183,23 @@
     }
 }
 
+@media screen and (max-width:510px) {
+    .product-card__discount {
+        padding: 14px 38px;
+        max-width: 120px;
+        margin-top: 18px;
+        margin-left: 18px;
+    }
+
+    .product-card__content {
+        padding: 18px;
+    }
+
+    .product-card__color {
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (max-width:430px) {
     .shop__wrap-title_line {
         width: 100px;
