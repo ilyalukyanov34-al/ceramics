@@ -310,7 +310,7 @@
         background: url(../img/gallery1.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
@@ -319,7 +319,7 @@
         background: url(../img/gallery2.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
@@ -328,7 +328,7 @@
         background: url(../img/gallery3.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
@@ -337,7 +337,7 @@
         background: url(../img/gallery4.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
@@ -346,7 +346,7 @@
         background: url(../img/gallery5.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
@@ -355,7 +355,7 @@
         background: url(../img/gallery6.png);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 600px;
+        height: 550px;
         display: flex;
         flex-direction: column;
     }
