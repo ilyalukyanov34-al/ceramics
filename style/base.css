@@ -1,31 +1,33 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    outline: none;
-    border: none;
-    font-family: var(--ff);
-    font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  font-family: var(--ff);
+  font-weight: 400;
 }
 
-:root{
-    --white: #F9F8F4;
-    --ff: "share tech mono";
-    --bb: #242424;
-    --gg:  grey;
-    --ee: #EEEEEE;
-    --rr: #6C6C6C;
+:root {
+  --white: #f9f8f4;
+  --ff: "share tech mono";
+  --bb: #242424;
+  --gg: grey;
+  --ee: #eeeeee;
+  --rr: #6c6c6c;
 }
 
-body{
-    min-width: 320px;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  min-width: 320px;
 }
-.container{
-    max-width: 1704px;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+.container {
+  max-width: 1704px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-

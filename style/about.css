@@ -1,103 +1,145 @@
 .about {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__nav {
-    margin-top: 140px;
-    max-width: 1704px;
+  margin-top: 140px;
+  max-width: 1704px;
 }
 
 .about__wrap {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
 .about__wrap-title {
-    font-family: var(--ff);
-    font-weight: 400;
-    font-size: clamp(2.188rem, 2.115rem + 0.36vw, 2.5rem);
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-transform: uppercase;
-    color: var(--bb);
+  font-family: var(--ff);
+  font-weight: 400;
+  font-size: clamp(2.188rem, 2.115rem + 0.36vw, 2.5rem);
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: var(--bb);
 }
 
 .about__wrap-title_line {
-    width: 144px;
-    height: 2;
+  width: 144px;
+  height: 2;
 }
 
 .about__text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .about__desc {
-    font-family: var(--ff);
-    font-weight: 400;
-    font-size: clamp(1.25rem, 1.192rem + 0.29vw, 1.5rem);
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: var(--bb);
+  font-family: var(--ff);
+  font-weight: 400;
+  font-size: clamp(1.25rem, 1.192rem + 0.29vw, 1.5rem);
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--bb);
 }
 
 .desc__descreption {
-    font-family: var(--ff);
-    font-weight: 400;
-    font-size: clamp(0.813rem, 0.769rem + 0.22vw, 1rem);
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: var(--rr);
-    word-break: break-all;
-    margin-bottom: 60px;
+  font-family: var(--ff);
+  font-weight: 400;
+  font-size: clamp(0.813rem, 0.769rem + 0.22vw, 1rem);
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--rr);
+  margin-bottom: 60px;
 }
 
 .about__img {
+  max-width: 100%;
+  margin-bottom: 140px;
+}
+
+@media screen and (max-width: 1500px) {
+  .about__nav {
+    margin-top: 110px;
+    max-width: 1704px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about__nav {
+    margin-top: 90px;
+    max-width: 1704px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .about__img {
     max-width: 100%;
-    margin-bottom: 140px;
+    margin-bottom: 90px;
+  }
 }
 
-@media screen and (max-width:1500px) {
-    .about__nav {
-        margin-top: 110px;
-        max-width: 1704px;
-    }
-
+@media screen and (max-width: 500px) {
+  .about__nav {
+    margin-top: 80px;
+    max-width: 1704px;
+  }
 }
 
-@media screen and (max-width:900px) {
-    .about__nav {
-        margin-top: 90px;
-        max-width: 1704px;
-    }
+@media screen and (max-width: 480px) {
+  .about__nav {
+    align-items: center;
+  }
+  .about__wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
+  .about__text {
+    text-align: center;
+  }
+
+  .about__wrap-title {
+    text-align: center;
+  }
+
+  .about__wrap-title_line {
+    margin: 0 auto;
+  }
+
+  .about__desc,
+  .desc__descreption {
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
 }
 
-@media screen and (max-width:760px) {
-    .about__img {
-        max-width: 100%;
-        margin-bottom: 90px;
-    }
-
+/* === МОЙ КОД: адаптив 420px-320px === */
+@media screen and (max-width: 420px) {
+  .about__nav { margin-top: 60px; }
+  .about__wrap-title { font-size: 30px; }
+  .about__wrap-title_line { width: 80px; }
+  .about__img { margin-bottom: 60px; }
 }
 
-@media screen and (max-width:500px) {
-    .about__nav {
-        margin-top: 80px;
-        max-width: 1704px;
-    }
-
+@media screen and (max-width: 360px) {
+  .about__wrap-title { font-size: 26px; }
+  .about__wrap-title_line { width: 60px; }
 }
 
-@media screen and (max-width:430px) {
-
-    .about__wrap-title_line {
-        width: 100px;
-        height: 2px;
-    }
-
+@media screen and (max-width: 320px) {
+  .about__wrap-title { font-size: 22px; }
+  .about__wrap-title_line { width: 40px; }
+  .about__img { margin-bottom: 40px; }
 }
+/* === КОНЕЦ МОЙ КОД === */
+
+/* @media screen and (max-width: 430px) {
+  .about__wrap-title_line {
+    width: 100px;
+    height: 2px;
+  }
+} */
