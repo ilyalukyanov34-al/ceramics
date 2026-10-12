@@ -32,6 +32,27 @@
   gap: 100px;
 }
 
+.icon-hover {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-hover img {
+  display: block;
+}
+
+.icon-hover__filled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.icon-hover:hover .icon-hover__filled {
+  opacity: 1;
+}
+
 .header__nav-list_item-link {
   font-family: var(--ff);
   font-weight: 400;
@@ -39,7 +60,24 @@
   line-height: 100%;
   color: var(--bb);
   text-decoration: none;
-  transition: 0.3s;
+  /* transition: 0.3s; */
+  position: relative;
+  transition: opacity 0.3s;
+}
+
+.header__nav-list_item-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.header__nav-list_item-link:hover::after {
+  width: 100%;
 }
 
 .header__nav-list_item-link:hover {
@@ -49,6 +87,18 @@
 .header__nav-icons {
   display: flex;
   gap: 62px;
+}
+
+.header__nav-icons a {
+  display: inline-block;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.header__nav-icons a:hover {
+  transform: translateY(-3px) scale(1.1);
+  opacity: 0.8;
 }
 
 .banner {
@@ -94,7 +144,7 @@
   color: var(--ee);
 }
 
-.Show {
+.banner__btn {
   width: 264px;
   height: 80px;
   padding: 10px;
@@ -102,15 +152,24 @@
   border: 1px solid var(--white);
   color: var(--white);
   font-size: clamp(1.25rem, 1.192rem + 0.29vw, 1.5rem);
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+
+  transition:
+    background-color 0.3s,
+    transform 0.3s,
+    box-shadow 0.3s;
+  cursor: pointer;
 }
 
-.Show:hover {
+.banner__btn:hover {
   color: var(--bb);
+  transform: translateY(-2px);
+}
+
+.banner__btn:active {
+  transform: translateY(0);
 }
 
 @media screen and (max-width: 1170px) {
@@ -134,7 +193,7 @@
 }
 
 @media screen and (max-width: 1010px) {
-  .Show {
+  .banner__btn {
     width: 250px;
     height: 70px;
     padding: 10px;
@@ -175,7 +234,7 @@
     gap: 30px;
   }
 
-  .Show {
+  .banner__btn {
     width: 240px;
     height: 67px;
     padding: 9px;
@@ -208,7 +267,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .Show {
+  .banner__btn {
     width: 230px;
     height: 61px;
     padding: 9px;
@@ -224,47 +283,8 @@
   }
 }
 
-/* 
-@media screen and (max-width: 560px) {
-    .header__wrap {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .header__nav-list {
-        display: flex;
-        align-items: center;
-        gap: 70px;
-    }
-
-    .header__nav-icons {
-        display: flex;
-        gap: 52px;
-    }
-
-    .Show {
-        display: block;
-        margin: 0 auto;
-        width: 220px;
-        height: 61px;
-        padding: 9px;
-        transition: 0.3s;
-    }
-
-    .banner__wrap {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-
-
-} */
-
 @media screen and (max-width: 500px) {
-  .Show {
+  .banner__btn {
     width: 210px;
     height: 58px;
     padding: 9px;
@@ -281,7 +301,7 @@
 }
 
 @media screen and (max-width: 480px) {
-  .Show {
+  .banner__btn {
     width: 200px;
     height: 55px;
     padding: 9px;
@@ -316,7 +336,7 @@
     gap: 42px;
   }
 
-  .Show {
+  .banner__btn {
     width: 180px;
     height: 50px;
     padding: 9px;
@@ -334,127 +354,58 @@
 
 /* === МОЙ КОД: адаптив 420px-320px === */
 @media screen and (max-width: 420px) {
-  .header__nav-list { gap: 22px; }
-  .header__nav-icons { gap: 18px; }
-  .Show { width: 170px; height: 48px; }
-  .banner__desc { gap: 28px; }
-  .banner__content { gap: 24px; }
+  .header__nav-list {
+    gap: 22px;
+  }
+  .header__nav-icons {
+    gap: 18px;
+  }
+  .banner__btn {
+    width: 170px;
+    height: 48px;
+  }
+  .banner__desc {
+    gap: 28px;
+  }
+  .banner__content {
+    gap: 24px;
+  }
 }
 
 @media screen and (max-width: 370px) {
   .header__nav-list {
     gap: 20px;
   }
-  
+
   .header__nav-icons {
     gap: 16px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .Show { width: 110px; height: 40px; font-size: 14px; }
-  .banner__content { gap: 20px; }
-}
-
-@media screen and (max-width: 320px) {
-  .header__nav { padding: 10px; }
-  .header__nav-list { gap: 18px; }
-  .header__nav-icons { gap: 14px; }
-  .Show { width: 90px; height: 36px; font-size: 13px; }
-}
-/* === КОНЕЦ МОЙ КОД === */
-
-/* @media screen and (max-width: 400px) {
-  .header__nav {
-    padding: 14px;
+  .banner__btn {
+    width: 110px;
+    height: 40px;
+    font-size: 14px;
   }
-
-  .header__nav-list {
-    gap: 25px;
-  }
-
-  .header__nav-icons {
+  .banner__content {
     gap: 20px;
   }
 }
-@media screen and (max-width: 380px) {
-  .header__wrap {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 12px;
-  }
 
+@media screen and (max-width: 320px) {
+  .header__nav {
+    padding: 10px;
+  }
   .header__nav-list {
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    gap: 18px;
   }
-
   .header__nav-icons {
-    display: flex;
-    gap: 32px;
+    gap: 14px;
   }
-
-  .Show {
-    width: 140px;
-    height: 43px;
-    padding: 9px;
-    transition: 0.3s;
-  }
-
-  .banner__desc {
-    gap: 30px;
-  }
-
-  .banner__content {
-    gap: 27px;
+  .banner__btn {
+    width: 90px;
+    height: 36px;
+    font-size: 13px;
   }
 }
-
-@media screen and (max-width: 360px) {
-  .header__wrap {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .header__nav-list {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-  }
-
-  .header__nav-icons {
-    display: flex;
-    gap: 29px;
-  }
-
-  .Show {
-    width: 110px;
-    height: 45px;
-    padding: 7px;
-    transition: 0.3s;
-  }
-}
-
-@media screen and (max-width: 345px) {
-  .header__wrap {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .header__nav-list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .header__nav-icons {
-    display: flex;
-    gap: 25px;
-  }
-} */
